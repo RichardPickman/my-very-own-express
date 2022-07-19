@@ -11,7 +11,7 @@ module.exports = class Router {
         const endpoint = this.endpoints[path];
 
         if (endpoint[method]) {
-            throw new Error(`[${method}] метод по адресу ${path} уже существует`);
+            throw new Error(`[${method}] method on address ${path} already exists`);
         }
 
         endpoint[method] = handler;
